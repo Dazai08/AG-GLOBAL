@@ -245,6 +245,82 @@
             color: #000000;
             font-weight: bolder;
         }
+        /* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px; /* Reduce padding on smaller screens */
+    }
+
+    header h1 {
+        font-size: 1.8em; /* Smaller font size for the heading */
+    }
+
+    header p {
+        font-size: 1em; /* Adjust font size for better readability */
+    }
+
+    .profile-pic {
+        width: 120px; /* Smaller profile picture */
+        height: 120px; /* Maintain aspect ratio */
+    }
+
+    .about, .social-media, .latest-video {
+        padding: 15px; /* Reduce padding */
+        margin-top: 20px; /* Adjust margin */
+    }
+
+    .social-media ul li {
+        display: block; /* Stack social media links vertically */
+        margin: 10px 0; /* Add margin for spacing */
+    }
+
+    .video-container {
+        width: 100%; /* Make video container responsive */
+        max-width: 100%; /* Prevent overflow */
+    }
+
+    footer {
+        font-size: 0.8em; /* Smaller footer text */
+    }
+
+    .btn {
+        margin: 50px 0; /* Adjust button margin */
+        padding: 10px 30px; /* Reduce button padding */
+    }
+
+    .welcome {
+        font-size: 18px; /* Adjust welcome message font size */
+    }
+
+    .red-bar {
+        flex-direction: column; /* Stack images and text */
+        align-items: center; /* Center align */
+    }
+
+    h1.team7 {
+        font-size: 24px; /* Smaller team name font size */
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Even smaller font size */
+    }
+
+    header p {
+        font-size: 0.9em; /* Smaller paragraph text */
+    }
+
+    .btn {
+        padding: 10px 20px; /* Reduce button size further */
+    }
+
+    .welcome {
+        font-size: 16px; /* Smaller welcome message */
+    }
+}
+
         
         
     </style>
@@ -322,3 +398,4 @@
     </script>
 </body>
 </html>
+
