@@ -225,80 +225,139 @@
             font-weight: bolder;
         }
 
-        /* Media Queries for Mobile Devices */
-        @media (max-width: 768px) {
-            body {
-                padding: 0 10px;
-            }
+       /* Existing CSS above... */
 
-            header h1 {
-                font-size: 1.8em;
-            }
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
 
-            header p {
-                font-size: 1em;
-            }
+    header h1 {
+        font-size: 1.8em;
+    }
 
-            .profile-pic {
-                width: 120px;
-                height: 120px;
-            }
+    header p {
+        font-size: 1em;
+    }
 
-            .about, .social-media, .latest-video {
-                padding: 15px;
-                margin-top: 20px;
-            }
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+    }
 
-            .social-media ul li {
-                display: block;
-                margin: 10px 0;
-            }
+    .about, .social-media, .latest-video {
+        padding: 15px;
+        margin-top: 20px;
+    }
 
-            .video-container {
-                width: 100%;
-                max-width: 100%;
-            }
+    .social-media ul li {
+        display: block;
+        margin: 10px 0;
+    }
 
-            footer {
-                font-size: 0.8em;
-            }
+    .video-container {
+        width: 100%;
+        max-width: 100%;
+    }
 
-            .btn {
-                margin: 50px 0;
-                padding: 10px 30px;
-            }
+    footer {
+        font-size: 0.8em;
+    }
 
-            .welcome {
-                font-size: 18px;
-            }
+    .btn {
+        margin: 50px 0;
+        padding: 10px 30px;
+    }
 
-            .red-bar {
-                flex-direction: column;
-                align-items: center;
-            }
+    .welcome {
+        font-size: 18px;
+    }
 
-            h1.team7 {
-                font-size: 24px;
-            }
-        }
+    .red-bar {
+        flex-direction: column;
+        align-items: center;
+    }
 
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 1.5em;
-            }
+    h1.team7 {
+        font-size: 24px;
+    }
+}
 
-            header p {
-                font-size: 0.9em;
-            }
+/* Specific Media Queries for Redmi Devices */
+@media (max-width: 720px) {
+    header h1 {
+        font-size: 1.6em;
+    }
 
-            .btn {
-                padding: 10px 20px;
-            }
+    header p {
+        font-size: 0.9em;
+    }
 
-            .welcome {
-                font-size: 16px;
-            }
-        }
+    .btn {
+        padding: 10px 25px;
+    }
+
+    .welcome {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+
+    .welcome {
+        font-size: 14px;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about, .social-media, .latest-video {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 0.7em;
+    }
+}
+
+/* Additional styles for very small screens */
+@media (max-width: 360px) {
+    .social-media ul li {
+        margin: 5px 0;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    header h1 {
+        font-size: 1.4em;
+    }
+}
+.Akatsuki{
+    overflow: hidden;
+}
+.Uchiha{
+    overflow: hidden;
+}
+
+        
     </style>
 </head>
 <body>
@@ -311,7 +370,7 @@
     <div id="main-content">
         <header>
             <div class="red-bar">
-                <img width="150px" src="Uchiha.png" alt="Uchiha">
+                <img class="Uchiha" width="150px" src="Uchiha.png" alt="Uchiha">
                 <h1 class="team7">AG GLOBAL</h1>
                 <img class="Akatsuki" width="150px" src="Akatsuki.png" alt="Akatsuki">
             </div>
@@ -341,7 +400,7 @@
         <section class="latest-video">
             <h2>Latest Video</h2>
             <div class="video-container">
-                <iframe width="560" height="315" src="prank.mp4" title="Latest Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="prank.mp4" title="Latest Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
 
@@ -369,3 +428,4 @@
     </script>
 </body>
 </html>
+
