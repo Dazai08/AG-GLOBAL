@@ -14,12 +14,10 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: #008080;
-
+            background: #000000;
             color: #ffffff;
             text-align: center;
             padding: 0 20px;
-            
         }
 
         /* Loading Video Overlay */
@@ -34,7 +32,7 @@
             justify-content: center;
             align-items: center;
             z-index: 1000;
-            transition: opacity 1s ease; /* Add transition for fading */
+            transition: opacity 1s ease;
         }
 
         /* Fade-in Animation */
@@ -49,9 +47,9 @@
 
         /* Main content styles */
         #main-content {
-            display: none; /* Hide main content until animation is done */
-            opacity: 0; /* Start with 0 opacity for fade-in */
-            animation: fadeIn 1s forwards; /* Add animation */
+            display: none;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
         }
 
         header {
@@ -96,6 +94,10 @@
             margin: 0 10px;
         }
 
+        .social-media ul li img {
+            vertical-align: middle; /* Align images with text */
+        }
+
         .social-media ul li a {
             color: #ffaa00;
             text-decoration: none;
@@ -119,222 +121,192 @@
             color: #cccccc;
             font-size: 0.9em;
         }
-        html, body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #000000;
-  /* transform: scale(1.5); */
-}
 
-/* button */
-.btn {
-  margin: 100px;
-  padding: 15px 40px;
-  border: none;
-  outline: none;
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: bolder;
-  /* cursor: pointer; */
-  position: relative;
-  z-index: 0;
-  border-radius: 12px;
-  animation: glowing 1.5s infinite; /* Continuous glowing animation */
-}
-.btn::after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #00eeff;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
-/* glow */
-.btn::before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #FF0000, #FF7300, #FFFB00, #48FF00,
-    #00FFD5, #002BFF, #FF00C8, #FF0000
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 600%;
-  z-index: -1;
-  width: calc(100% + 4px);
-  height:  calc(100% + 4px);
-  filter: blur(8px);
-  animation: glowing 20s linear infinite;
-  transition: opacity .3s ease-in-out;
-  border-radius: 10px;
-  opacity: 1;
-  cursor: clicked;
-}
+        .btn {
+            margin: 100px;
+            padding: 15px 40px;
+            border: none;
+            outline: none;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: bolder;
+            position: relative;
+            z-index: 0;
+            border-radius: 12px;
+            animation: glowing 1.5s infinite;
+        }
 
-@keyframes glowing {
-  0% {background-position: 0 0;}
-  50% {background-position: 400% 0;}
-  100% {background-position: 0 0;}
-}
+        .btn::after {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
 
-/* hover */
-.btn:hover::before {
-  opacity: 1;
-}
+        .btn::before {
+            content: "";
+            background: linear-gradient(45deg, #FF0000, #FF7300, #FFFB00, #48FF00, #00FFD5, #002BFF, #FF00C8, #FF0000);
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 600%;
+            z-index: -1;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            filter: blur(8px);
+            animation: glowing 20s linear infinite;
+            transition: opacity .3s ease-in-out;
+            border-radius: 10px;
+            opacity: 1;
+        }
 
-.btn:active:after {
-  background: transparent;
-}
+        @keyframes glowing {
+            0% {background-position: 0 0;}
+            50% {background-position: 400% 0;}
+            100% {background-position: 0 0;}
+        }
 
-.btn:active {
-  color: #000;
-  font-weight: bold;
-}
+        .btn:hover::before {
+            opacity: 1;
+        }
 
-.red-bar {
+        .btn:active:after {
+            background: transparent;
+        }
+
+        .btn:active {
+            color: #000;
+            font-weight: bold;
+        }
+
+        .red-bar {
             background-color: rgb(0, 0, 0);
-            height: 40px; /* Height of the bar */
+            height: 40px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.5em;
             color: #fff;
         }
-       h1.team7{
-        font-size: 30px;
-        color: red;
-        
-        
-       }
-       .welcome {
+
+        h1.team7 {
+            font-size: 30px;
+            color: red;
+        }
+
+        .welcome {
             font-size: 20px;
             color: #ffffff;
             animation: glow-animation 1.5s infinite alternate;
-            text-shadow: 
-            45deg,
-    #FF0000, #FF7300, #FFFB00, #48FF00,
-    #00FFD5, #002BFF, #FF00C8, #FF0000
-  
         }
 
         @keyframes glow-animation {
             0% {
                 text-shadow: 
-                45deg,
-    #FF0000, #FF7300, #FFFB00, #48FF00,
-    #00FFD5, #002BFF, #FF00C8, #FF0000
-  
-            }
-            888% {
-                text-shadow: 
-                    0 0 10px #ff0000, 
-                    0 0 20px #ff7300, 
-                    0 0 30px #fffb00, 
-                    0 0 40px #48ff00, 
-                    0 0 50px #00ffd5, 
-                    0 0 60px #002bff;
+                0 0 10px #FF0000, 
+                0 0 20px #FF7300, 
+                0 0 30px #FFFB00, 
+                0 0 40px #48FF00, 
+                0 0 50px #00FFD5, 
+                0 0 60px #002BFF, 
+                0 0 70px #FF00C8, 
+                0 0 80px #FF0000;
             }
         }
-        .copyright{
+
+        .copyright {
             background-color: whitesmoke;
             color: #000000;
             font-weight: bolder;
         }
+
         /* Media Queries for Mobile Devices */
-@media (max-width: 768px) {
-    body {
-        padding: 0 10px; /* Reduce padding on smaller screens */
-    }
+        @media (max-width: 768px) {
+            body {
+                padding: 0 10px;
+            }
 
-    header h1 {
-        font-size: 1.8em; /* Smaller font size for the heading */
-    }
+            header h1 {
+                font-size: 1.8em;
+            }
 
-    header p {
-        font-size: 1em; /* Adjust font size for better readability */
-    }
+            header p {
+                font-size: 1em;
+            }
 
-    .profile-pic {
-        width: 120px; /* Smaller profile picture */
-        height: 120px; /* Maintain aspect ratio */
-    }
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+            }
 
-    .about, .social-media, .latest-video {
-        padding: 15px; /* Reduce padding */
-        margin-top: 20px; /* Adjust margin */
-    }
+            .about, .social-media, .latest-video {
+                padding: 15px;
+                margin-top: 20px;
+            }
 
-    .social-media ul li {
-        display: block; /* Stack social media links vertically */
-        margin: 10px 0; /* Add margin for spacing */
-    }
+            .social-media ul li {
+                display: block;
+                margin: 10px 0;
+            }
 
-    .video-container {
-        width: 100%; /* Make video container responsive */
-        max-width: 100%; /* Prevent overflow */
-    }
+            .video-container {
+                width: 100%;
+                max-width: 100%;
+            }
 
-    footer {
-        font-size: 0.8em; /* Smaller footer text */
-    }
+            footer {
+                font-size: 0.8em;
+            }
 
-    .btn {
-        margin: 50px 0; /* Adjust button margin */
-        padding: 10px 30px; /* Reduce button padding */
-    }
+            .btn {
+                margin: 50px 0;
+                padding: 10px 30px;
+            }
 
-    .welcome {
-        font-size: 18px; /* Adjust welcome message font size */
-    }
+            .welcome {
+                font-size: 18px;
+            }
 
-    .red-bar {
-        flex-direction: column; /* Stack images and text */
-        align-items: center; /* Center align */
-    }
+            .red-bar {
+                flex-direction: column;
+                align-items: center;
+            }
 
-    h1.team7 {
-        font-size: 24px; /* Smaller team name font size */
-    }
-}
+            h1.team7 {
+                font-size: 24px;
+            }
+        }
 
-/* Further adjustments for very small screens */
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5em; /* Even smaller font size */
-    }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
+            }
 
-    header p {
-        font-size: 0.9em; /* Smaller paragraph text */
-    }
+            header p {
+                font-size: 0.9em;
+            }
 
-    .btn {
-        padding: 10px 20px; /* Reduce button size further */
-    }
+            .btn {
+                padding: 10px 20px;
+            }
 
-    .welcome {
-        font-size: 16px; /* Smaller welcome message */
-    }
-}
-
-        
-        
+            .welcome {
+                font-size: 16px;
+            }
+        }
     </style>
-
-    
 </head>
 <body>
-
     <!-- Loading Video -->
     <div id="loading">
         <video width="100%" height="100%" src="sharingan.mp4" autoplay muted></video>
     </div>
 
-    
     <!-- Main Content -->
     <div id="main-content">
         <header>
@@ -352,7 +324,7 @@
             <h2>About Me</h2>
             <p>
                 Hello! I'm AAYUSH, the creator behind AG GLOBAL. I love sharing gameplay, reviews, and fun moments from my favorite games.
-                Whether you're into action, adventure, or strategy games. Join me as I explore virtual worlds,
+                Whether you're into action, adventure, or strategy games, join me as I explore virtual worlds,
                 tackle challenges, and connect with a fantastic gaming community!
             </p>
         </section>
@@ -360,17 +332,16 @@
         <section class="social-media">
             <h2>Follow Me</h2>
             <ul class="follow">
-                <li><img width="50px" src="youtube.png" alt="youtube"><a href="https://www.youtube.com/dazai10833" target="_blank"></a></li>
-                <li><img width="40px" src="instagram.png" alt="instagram"><a href="https://www.instagram.com/aayu._.27" target="_blank"></a></li>
-                
-                <li><img width="55px" src="discord.png" alt="discord"><a href="https://discord.gg/V7ZyVtkJ" target="_blank"></a></li>
+                <li><img width="50px" src="youtube.png" alt="YouTube"><a href="https://www.youtube.com/dazai10833" target="_blank">YouTube</a></li>
+                <li><img width="40px" src="instagram.png" alt="Instagram"><a href="https://www.instagram.com/aayu._.27" target="_blank">Instagram</a></li>
+                <li><img width="55px" src="discord.png" alt="Discord"><a href="https://discord.gg/V7ZyVtkJ" target="_blank">Discord</a></li>
             </ul>
         </section>
 
         <section class="latest-video">
             <h2>Latest Video</h2>
             <div class="video-container">
-                <iframe width="560" height="315" src="prank.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="prank.mp4" title="Latest Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
 
@@ -393,9 +364,8 @@
                     mainContent.style.display = 'block'; // Show main content
                     mainContent.style.opacity = '1'; // Set opacity to 1 for fade-in
                 }, 1000); // Match this to the CSS transition duration
-            }, -1000); // Delay before starting the fade out
+            }, 1000); // Delay before starting the fade out
         });
     </script>
 </body>
 </html>
-
