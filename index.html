@@ -61,7 +61,7 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            margin-bottom: -65px;
+            margin-bottom: -70px;
         }
 
         header h1 {
@@ -193,7 +193,7 @@
             font-size: 1.5em;
             color: #fff;
         }
-
+        
         h1.team7 {
             font-size: 30px;
             color: red;
@@ -226,27 +226,30 @@
         }
 
        /* Existing CSS above... */
-
-/* Media Queries for Mobile Devices */
-@media (max-width: 768px) {
-    body {
-        padding: 0 10px;
-    }
-
-    header h1 {
-        font-size: 1.8em;
-    }
-
-    header p {
-        font-size: 1em;
+       
+       /* Media Queries for Mobile Devices */
+       @media (max-width: 768px) {
+           body {
+               padding: 0 10px;
+            }
+            
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            header p {
+                font-size: 1em;
     }
 
     .profile-pic {
         width: 120px;
         height: 120px;
+        bottom: 35px;
+        right: 20px;
+        position: relative;
         overflow: hidden;
     }
-
+    
     .about, .social-media, .latest-video {
         padding: 15px;
         margin-top: 20px;
@@ -256,12 +259,12 @@
         display: block;
         margin: 10px 0;
     }
-
+    
     .video-container {
         width: 100%;
         max-width: 100%;
     }
-
+    
     footer {
         font-size: 0.8em;
     }
@@ -274,13 +277,27 @@
     .welcome {
         font-size: 18px;
     }
-
+    
     .red-bar {
         flex-direction: column;
         align-items: center;
     }
+    .Akatsuki{
+        position: relative;
+        right: -130px;
+        top: -45px;
+        width: 110px;
 
+    }
+    .Uchiha{
+        position: relative;
+        right: 128px;
+        top: 35px;
+        width: 110px;
+    }
+    
     h1.team7 {
+        align-items: center;
         font-size: 24px;
     }
 }
@@ -351,10 +368,12 @@
     }
 }
 .Akatsuki{
-    overflow: hidden;
+    position: relative;
+    /* overflow: hidden; */
 }
 .Uchiha{
-    overflow: hidden;
+    position: relative;
+    /* overflow: hidden; */
 }
 
         
@@ -375,14 +394,14 @@
                 <img class="Akatsuki" width="150px" src="Akatsuki.png" alt="Akatsuki">
             </div>
             <img src="Madara.png" alt="Aayu" class="profile-pic">
-            <button class="btn">AAYUSH</button>
+            <button class="btn">YORIICHI</button>
             <p class="welcome">Welcome to the official website of AG GLOBAL!</p>
         </header>
 
         <section class="about">
             <h2>About Me</h2>
             <p>
-                Hello! I'm AAYUSH, the creator behind AG GLOBAL. I love sharing gameplay, reviews, and fun moments from my favorite games.
+                Hello! I'm YORIICHI, the creator behind AG GLOBAL. I love sharing gameplay, reviews, and fun moments from my favorite games.
                 Whether you're into action, adventure, or strategy games, join me as I explore virtual worlds,
                 tackle challenges, and connect with a fantastic gaming community!
             </p>
