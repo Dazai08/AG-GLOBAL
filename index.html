@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to AG GLOBAL, the official website of YORIICHI, sharing gameplay, reviews, and fun moments from favorite games.">
+    <meta name="keywords" content="AG GLOBAL, gaming, gameplay, reviews, YORIICHI, YouTube, Discord, Instagram">
     <title>AG GLOBAL - Official Website</title>
+    <link rel="canonical" href="https://www.example.com/">
     <style>
         /* Reset */
         * {
@@ -37,12 +40,8 @@
 
         /* Fade-in Animation */
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
         /* Main content styles */
@@ -225,164 +224,130 @@
             font-weight: bolder;
         }
 
-       /* Existing CSS above... */
-       
-       /* Media Queries for Mobile Devices */
-       @media (max-width: 768px) {
-        #loading{
-            width: 100%;
-            height: 100%;
-        }
-           body {
-               padding: 0 10px;
+        /* Media Queries for Mobile Devices */
+        @media (max-width: 768px) {
+            #loading {
+                width: 100%;
+                height: 100%;
             }
-            
+            body {
+                padding: 0 10px;
+            }
             header h1 {
                 font-size: 1.8em;
             }
-            
             header p {
                 font-size: 1em;
-    }
+            }
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+                bottom: 35px;
+                right: 20px;
+                position: relative;
+                overflow: hidden;
+            }
+            .about, .social-media, .latest-video {
+                padding: 15px;
+                margin-top: 20px;
+            }
+            .social-media ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            .video-container {
+                width: 100%;
+                max-width: 100%;
+            }
+            footer {
+                font-size: 0.8em;
+            }
+            .btn {
+                margin: 50px 0;
+                padding: 10px 30px;
+            }
+            .welcome {
+                font-size: 18px;
+            }
+            .red-bar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .Akatsuki {
+                position: relative;
+                right: -130px;
+                top: -45px;
+                width: 110px;
+            }
+            .Uchiha {
+                position: relative;
+                right: 128px;
+                top: 35px;
+                width: 110px;
+            }
+            h1.team7 {
+                align-items: center;
+                font-size: 24px;
+            }
+        }
 
-    .profile-pic {
-        width: 120px;
-        height: 120px;
-        bottom: 35px;
-        right: 20px;
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .about, .social-media, .latest-video {
-        padding: 15px;
-        margin-top: 20px;
-    }
+        /* Specific Media Queries for Redmi Devices */
+        @media (max-width: 720px) {
+            header h1 {
+                font-size: 1.6em;
+            }
+            header p {
+                font-size: 0.9em;
+            }
+            .btn {
+                padding: 10px 25px;
+            }
+            .welcome {
+                font-size: 16px;
+            }
+        }
 
-    .social-media ul li {
-        display: block;
-        margin: 10px 0;
-    }
-    
-    .video-container {
-        width: 100%;
-        max-width: 100%;
-    }
-    
-    footer {
-        font-size: 0.8em;
-    }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            header p {
+                font-size: 0.9em;
+            }
+            .btn {
+                padding: 10px 20px;
+            }
+            .welcome {
+                font-size: 14px;
+            }
+            .profile-pic {
+                width: 80px;
+                height: 80px;
+            }
+            .about, .social-media, .latest-video {
+                padding: 10px;
+            }
+            footer {
+                font-size: 0.7em;
+            }
+        }
 
-    .btn {
-        margin: 50px 0;
-        padding: 10px 30px;
-    }
-
-    .welcome {
-        font-size: 18px;
-    }
-    
-    .red-bar {
-        flex-direction: column;
-        align-items: center;
-    }
-    .Akatsuki{
-        position: relative;
-        right: -130px;
-        top: -45px;
-        width: 110px;
-
-    }
-    .Uchiha{
-        position: relative;
-        right: 128px;
-        top: 35px;
-        width: 110px;
-    }
-    
-    h1.team7 {
-        align-items: center;
-        font-size: 24px;
-    }
-}
-
-/* Specific Media Queries for Redmi Devices */
-@media (max-width: 720px) {
-    
-    header h1 {
-        font-size: 1.6em;
-    }
-
-    header p {
-        font-size: 0.9em;
-    }
-
-    .btn {
-        padding: 10px 25px;
-    }
-
-    .welcome {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    header p {
-        font-size: 0.9em;
-    }
-
-    .btn {
-        padding: 10px 20px;
-    }
-
-    .welcome {
-        font-size: 14px;
-    }
-
-    .profile-pic {
-        width: 80px;
-        height: 80px;
-    }
-
-    .about, .social-media, .latest-video {
-        padding: 10px;
-    }
-
-    footer {
-        font-size: 0.7em;
-    }
-}
-
-/* Additional styles for very small screens */
-@media (max-width: 360px) {
-
-    .social-media ul li {
-        margin: 5px 0;
-    }
-
-    .btn {
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    header h1 {
-        font-size: 1.4em;
-    }
-}
-.Akatsuki{
-    position: relative;
-    /* overflow: hidden; */
-}
-.Uchiha{
-    position: relative;
-    /* overflow: hidden; */
-}
-
-        
+        /* Additional styles for very small screens */
+        @media (max-width: 360px) {
+            .social-media ul li {
+                margin: 5px 0;
+            }
+            .btn {
+                width: 100%;
+                padding: 10px 0;
+            }
+            header h1 {
+                font-size: 1.4em;
+            }
+        }
+        .Akatsuki, .Uchiha {
+            position: relative;
+        }
     </style>
 </head>
 <body>
@@ -396,39 +361,41 @@
     <div id="main-content">
         <header>
             <div class="red-bar">
-                <img class="Uchiha" width="150px" src="Uchiha.png" alt="Uchiha">
+                <img class="Uchiha" width="150px" src="Uchiha.png" alt="Uchiha Logo">
                 <h1 class="team7">AG GLOBAL</h1>
-                <img class="Akatsuki" width="150px" src="Akatsuki.png" alt="Akatsuki">
+                <img class="Akatsuki" width="150px" src="Akatsuki.png" alt="Akatsuki Logo">
             </div>
-            <img src="Madara.png" alt="Aayu" class="profile-pic">
+            <img src="Madara.png" alt="Profile of YORIICHI" class="profile-pic">
             <button class="btn">YORIICHI</button>
             <p class="welcome">Welcome to the official website of AG GLOBAL!</p>
         </header>
 
-        <section class="about">
-            <h2>About Me</h2>
-            <p>
-                Hello! I'm YORIICHI, the creator behind AG GLOBAL. I love sharing gameplay, reviews, and fun moments from my favorite games.
-                Whether you're into action, adventure, or strategy games, join me as I explore virtual worlds,
-                tackle challenges, and connect with a fantastic gaming community!
-            </p>
-        </section>
+        <main>
+            <section class="about">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm YORIICHI, the creator behind AG GLOBAL. I love sharing gameplay, reviews, and fun moments from my favorite games.
+                    Whether you're into action, adventure, or strategy games, join me as I explore virtual worlds,
+                    tackle challenges, and connect with a fantastic gaming community!
+                </p>
+            </section>
 
-        <section class="social-media">
-            <h2>Follow Me</h2>
-            <ul class="follow">
-                <li><img width="50px" src="youtube.png" alt="YouTube"><a href="https://www.youtube.com/dazai10833" target="_blank">YouTube</a></li>
-                <li><img width="40px" src="instagram.png" alt="Instagram"><a href="https://www.instagram.com/aayu._.27" target="_blank">Instagram</a></li>
-                <li><img width="55px" src="discord.png" alt="Discord"><a href="https://discord.gg/V7ZyVtkJ" target="_blank">Discord</a></li>
-            </ul>
-        </section>
+            <section class="social-media">
+                <h2>Follow Me</h2>
+                <ul class="follow">
+                    <li><img width="50px" src="youtube.png" alt="YouTube Icon"><a href="https://www.youtube.com/@freefireesportsofficial" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                    <li><img width="40px" src="instagram.png" alt="Instagram Icon"><a href="https://www.instagram.com/_aayu._.27" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><img width="55px" src="discord.png" alt="Discord Icon"><a href="https://discord.gg/V7ZyVtkJ" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                </ul>
+            </section>
 
-        <section class="latest-video">
-            <h2>Latest Video</h2>
-            <div class="video-container">
-                <iframe width="100%" height="100%" src="troll.mp4" title="Latest Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </section>
+            <section class="latest-video">
+                <h2>Latest Video</h2>
+                <div class="video-container">
+                    <iframe width="100%" height="100%" src="troll.mp4" title="Latest Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        </main>
 
         <footer class="copyright">
             <p>&copy; 2024 AG GLOBAL. All rights reserved.</p>
